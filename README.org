@@ -1,0 +1,33 @@
+#+TITLE: ES118 Lab #4 Assignment
+#+AUTHOR: Ufuk Baler, MSc. & Assoc. Prof. Dr. Fethi Okyar
+#+SUBTITLE: 
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080, navigationMode:"linear", transition:"none"
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1> <h2>%s</h2> <h5>%a</h5>
+#+OPTIONS: timestamp:nil toc:1 num:nil reveal_global_footer:nil
+#+REVEAL_EXTRA_CSS: ../style.css
+#+LATEX_HEADER: \usepackage{amsmath}
+
+#+ATTR_HTML: :width 800px
+[[./throw.png]]
+
+When a rock of mass $m$ kg thrown with initial speed $v_0$ m/s at an angle of $\theta$ degree, find the listed information under the effect of a gravitational acceleration acting downwards $g = 9.81$ m/s$^2$,
+- time of flight: $t_f = \frac{2v_0sin(\theta)}{g}$ (s)
+- range: $R = \frac{v_0^2 sin(2\theta)}{g}$ (m)
+- maximum height: $h_m = \frac{v_0^2sin^2(\theta)}{2g}$ (m)
+- velocity at maximum height: $v_h = v_0 cos(\theta)$ (m/s)
+- kinetic energy at maximum height: $K_h = \frac{1}{2}mv_hh_m^2$ (J)
+
+For this purpose write a function called ~throw_rock~ which accepts $m$, $v_0$, and $\theta$ in a new file called ~lab4.py~.
+
+The function shall return all the computed variables as well as display those variables in the console using ~print~ function. For instance, if $m = 1.5$ kg, $v_0 = 0.3$ m/s, and $\theta = 35.20$ degrees, the output in the console will be
+
+#+BEGIN_SRC text
+For a rock with 1.500 kg mass thrown with 0.300 m/s at an angle of  35.20 degrees:
+Time of flight is    3.5e-02 s
+The range in x-direction is    8.6e-03 m
+Maximum height is    1.5e-03 m
+The speed at maximum height is    2.5e-01 m/s
+Kinetic energy at the maximum height is 4.27e-07 J
+#+END_SRC
